@@ -39,10 +39,10 @@
         map.on("load", function () {
             map.addImage("pulsing-dot", pulsing_dot, { pixelRatio: 2 }),
             // reload every 5000 milisec
-            window.setInterval(function () { map.getSource("ships").setData(ships_data_url) }, 5000),
+            window.setInterval(function () { map.getSource("ships").setData(sites_data_url) }, 5000),
             map.addSource("ships", { 
                     type: "geojson",
-                    data: ships_data_url
+                    data: sites_data_url
                     }), 
             map.addLayer({
                     id: "ships",

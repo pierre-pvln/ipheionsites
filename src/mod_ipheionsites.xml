@@ -71,9 +71,9 @@
                 label="Mapbox Accesstoken"
                 description="MOD_IPHEIONSITES_MAPBOX_ACCESSTOKEN">
             </field>
-            <field name="Sites_data_url"
+            <field name="sites_data_url"
                 type="text"
-                label="Ships Data Url"
+                label="Sites Data Url"
                 description="MOD_IPHEIONSITES_DATA_DATA_URL">
             </field>
             <field name="window_latitude"
