@@ -1,3 +1,3 @@
 --- 
-# Folder with additional documentation for ipheionsites extension
+# Folder with additional documentation for ipheionships extension
 --- 

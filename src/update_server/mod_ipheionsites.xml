@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+	<!-- See also https://docs.joomla.org/Deploying_an_Update_Server -->
+	<update>
+		<name>mod_ipheionsites</name>
+		<description>Module to show a mapbox map with a geojson polygon on the a Joomla! website</description>
+		<maintainer>Pierre Veelen</maintainer>
+		<maintainerurl>http://www.pvln.nl</maintainerurl>
+        <element>mod_ipheionsites</element>
+		<type>module</type>
+		<client>0</client>
+		<version>0.0.1.0</version>
+		<infourl title="List Installed Extensions">http://www.pvln.nl/ipheionsites</infourl>
+		<downloads>
+			<downloadurl type="upgrade" format="zip">http://download.pvln.nl/joomla/modules/ipheionsites/mod_ipheionsites_v0.0.1.0.zip</downloadurl>
+		</downloads>
+		<targetplatform name="joomla" version="3" />
+	</update>
+
+</updates>

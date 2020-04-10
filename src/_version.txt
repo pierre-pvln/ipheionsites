@@ -2,7 +2,7 @@
 # Purpose:       set the versioning elements to a value
 # Author:        pierre@pvln.nl
 #
-# For extension: ipheionsites
+# For extension: ipheionships
 #
 # Using Semantic Versioning 2.0.0 
 # Major.Minor.[patch]
@@ -16,11 +16,11 @@
 # 
 # Patch releases indicate that bugs have been fixed.
 # 
-# Dev releases indicate work in progress.
-# 
+# Development releases only used during development. Should be left empty in final production versioning
+#
 # Changes should be commented in CHANGELOG.md
 #
 majorversion=0
 minorversion=0
 patchversion=1
-devversion=1
+devversion=0

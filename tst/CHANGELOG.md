@@ -1,7 +1,7 @@
 --- 
-#  Changelog for the ipheionsites Joomla! test code:
+#  Changelog for the ipheionships Joomla! test code:
 ---
-<h4>v.0.0.1 2020-04-10</h4>
+<h4>v.0.0.1 2020-04-06</h4>
 <ul>
 <li>Initial version</li>
 </ul>

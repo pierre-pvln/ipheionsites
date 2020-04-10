@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- basic information of the extension -->
+<!-- more info: https://docs.joomla.org/Manifest_files/nl -->
+<extension
+    version="3.0" 
+    type="module"
+	client="site"
+	method="upgrade">
+
+    <name>mod_ipheionsites</name>
+
+    <!-- The following metadata elements are optional and free of formatting constraints -->
+    <author>Pierre Veelen</author>
+    <authorEmail>pierre@pvln.nl</authorEmail>
+    <authorUrl>http://www.pvln.nl/ipheionsites</authorUrl>
+    <creationDate>24 March 2020</creationDate>
+    <copyright>Copyright (C) 2020 by Pierre Veelen. All rights reserved.</copyright>
+    <license>GNU General Public License version 2</license>
+
+    <!--  The version string for this extension; is recorded in the #__extensions table -->
+    <version>0.0.1.0</version>
+
+    <!-- The description is optional and defaults to the name; translatable field -->
+    <description>MOD_IPHEIONSITES_XML_DESCRIPTION</description>
+
+	<!-- the internal name of the component. If omitted, name will be cleaned and used -->
+	<element>ipheionsites</element>
+	
+    <!-- files and folders used by this module -->
+    <files>
+        <filename module="mod_ipheionsites">mod_ipheionsites.php</filename>
+        <filename>mod_ipheionsites.xml</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+    </files>
+	
+	<!-- files and folders used by this module -->
+	<!-- in folder .\media are put in .\media\mod_ipheionsites\ on the webserver-->
+	<media folder="media" destination="mod_ipheionsites">
+		<folder>js</folder>
+	</media>	
+	
+    <!-- additional fields to be configured in joomla back-end for this module-->  
+    <config>
+    <fields name="params" >
+        <fieldset name="advanced" >
+            <field name="moduleclass_sfx"
+                type="text"
+                label="Module Class Suffix"
+                description="MOD_IPHEIONSITES_CLASS_SUFFIX"
+            />
+            <field name="pretext" 
+                type="textarea"
+                label="Pre Text"
+                description="MOD_IPHEIONSITES_PRETEXT"
+                cols="30"
+                rows="5"
+            />
+            <field name="posttext"
+                type="textarea"
+                label="Post Text"
+                description="MOD_IPHEIONSITES_POSTTEXT"
+                cols="30"
+                rows="5"
+            />
+            <field name="mapbox_accesstoken"
+                type="text"
+                label="Mapbox Accesstoken"
+                description="MOD_IPHEIONSITES_MAPBOX_ACCESSTOKEN">
+            </field>
+            <field name="Sites_data_url"
+                type="text"
+                label="Ships Data Url"
+                description="MOD_IPHEIONSITES_DATA_DATA_URL">
+            </field>
+            <field name="window_latitude"
+                type="text"
+                label="Window Latitude"
+                description="MOD_IPHEIONSITES_WINDOW_LATITUDE">
+            </field>
+            <field name="window_longitude"
+                type="text"
+                label="Window Longitude"
+                description="MOD_IPHEIONSITES_WINDOW_LONGITUDE">
+            </field>
+        </fieldset>
+    </fields>
+    </config>
+
+    <!-- configuration for update servers-->
+    <updateservers>
+        <server
+            type="extension"
+            priority="1"
+            name="Updates for Ipheion Graphs module">
+            http://update.pvln.nl/joomla/modules/ipheionsites/mod_ipheionsites.xml
+        </server>
+
+    </updateservers>
+</extension>

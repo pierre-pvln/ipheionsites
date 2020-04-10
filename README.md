@@ -1,3 +1,3 @@
 --- 
-# README file for the ipheionsites Joomla! extension
+# README file for the ipheionships Joomla! extension
 --- 
