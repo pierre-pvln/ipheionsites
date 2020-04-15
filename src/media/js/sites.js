@@ -4,7 +4,7 @@
             container: map_container_name,
             style: "mapbox://styles/mapbox/streets-v11",
             center: [map_center_longitude, map_center_latitude],
-            zoom: 14,
+            zoom: map_center_zoom,
         }),
         pulsing_dot = {
             width: size = 50,

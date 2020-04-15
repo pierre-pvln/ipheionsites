@@ -19,7 +19,7 @@
     <license>GNU General Public License version 2</license>
 
     <!--  The version string for this extension; is recorded in the #__extensions table -->
-    <version>0.0.1.0</version>
+    <version>0.0.1.1</version>
 
     <!-- The description is optional and defaults to the name; translatable field -->
     <description>MOD_IPHEIONSITES_XML_DESCRIPTION</description>
@@ -86,6 +86,13 @@
                 label="Window Longitude"
                 description="MOD_IPHEIONSITES_WINDOW_LONGITUDE">
             </field>
+            <field name="window_zoom"
+                type="text"
+                label="Window Zoom"
+				default="10"
+                description="MOD_IPHEIONSITES_WINDOW_ZOOM">
+            </field>
+
         </fieldset>
     </fields>
     </config>
