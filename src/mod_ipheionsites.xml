@@ -89,7 +89,7 @@
             <field name="window_zoom"
                 type="text"
                 label="Window Zoom"
-				default="10"
+				default="8"
                 description="MOD_IPHEIONSITES_WINDOW_ZOOM">
             </field>
 
